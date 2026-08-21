@@ -1,0 +1,16 @@
+org\DenoiseStorm\deconvolution\core\FFTUtil.class
+org\DenoiseStorm\htvdenoise\HTVDenoise_Plugin.class
+org\DenoiseStorm\htvdenoise\math\IterativeShrinkage.class
+org\DenoiseStorm\htvdenoise\math\IterativeShrinkage$IterResult.class
+org\DenoiseStorm\deconvolution\Deconvolution_Plugin.class
+org\DenoiseStorm\htvdenoise\math\FFTOps.class
+org\DenoiseStorm\tvgf\TVGF_Plugin.class
+org\DenoiseStorm\tvgf\math\FFTGradient.class
+org\DenoiseStorm\deconvolution\core\PSFGenerator.class
+org\DenoiseStorm\GeodesicFilter\Core\GeodesicFilterCore.class
+org\DenoiseStorm\deconvolution\core\DeconvolutionCore.class
+org\DenoiseStorm\GeodesicFilter\GeodesicFilter_Plugin.class
+org\DenoiseStorm\htvdenoise\core\SparseHessianCore$ProcessResult.class
+org\DenoiseStorm\htvdenoise\core\SparseHessianCore.class
+org\DenoiseStorm\htvdenoise\math\DifferentialOps.class
+org\DenoiseStorm\tvgf\core\TVGFCore.class

@@ -1,0 +1,14 @@
+F:\JAVA\Z Tests\ALL3FINAL1_HTV_TVGF_GeoF\DenoiseStorm\src\main\java\org\DenoiseStorm\deconvolution\core\DeconvolutionCore.java
+F:\JAVA\Z Tests\ALL3FINAL1_HTV_TVGF_GeoF\DenoiseStorm\src\main\java\org\DenoiseStorm\deconvolution\core\FFTUtil.java
+F:\JAVA\Z Tests\ALL3FINAL1_HTV_TVGF_GeoF\DenoiseStorm\src\main\java\org\DenoiseStorm\deconvolution\core\PSFGenerator.java
+F:\JAVA\Z Tests\ALL3FINAL1_HTV_TVGF_GeoF\DenoiseStorm\src\main\java\org\DenoiseStorm\deconvolution\Deconvolution_Plugin.java
+F:\JAVA\Z Tests\ALL3FINAL1_HTV_TVGF_GeoF\DenoiseStorm\src\main\java\org\DenoiseStorm\GeodesicFilter\Core\GeodesicFilterCore.java
+F:\JAVA\Z Tests\ALL3FINAL1_HTV_TVGF_GeoF\DenoiseStorm\src\main\java\org\DenoiseStorm\GeodesicFilter\GeodesicFilter_Plugin.java
+F:\JAVA\Z Tests\ALL3FINAL1_HTV_TVGF_GeoF\DenoiseStorm\src\main\java\org\DenoiseStorm\htvdenoise\core\SparseHessianCore.java
+F:\JAVA\Z Tests\ALL3FINAL1_HTV_TVGF_GeoF\DenoiseStorm\src\main\java\org\DenoiseStorm\htvdenoise\HTVDenoise_Plugin.java
+F:\JAVA\Z Tests\ALL3FINAL1_HTV_TVGF_GeoF\DenoiseStorm\src\main\java\org\DenoiseStorm\htvdenoise\math\DifferentialOps.java
+F:\JAVA\Z Tests\ALL3FINAL1_HTV_TVGF_GeoF\DenoiseStorm\src\main\java\org\DenoiseStorm\htvdenoise\math\FFTOps.java
+F:\JAVA\Z Tests\ALL3FINAL1_HTV_TVGF_GeoF\DenoiseStorm\src\main\java\org\DenoiseStorm\htvdenoise\math\IterativeShrinkage.java
+F:\JAVA\Z Tests\ALL3FINAL1_HTV_TVGF_GeoF\DenoiseStorm\src\main\java\org\DenoiseStorm\tvgf\core\TVGFCore.java
+F:\JAVA\Z Tests\ALL3FINAL1_HTV_TVGF_GeoF\DenoiseStorm\src\main\java\org\DenoiseStorm\tvgf\math\FFTGradient.java
+F:\JAVA\Z Tests\ALL3FINAL1_HTV_TVGF_GeoF\DenoiseStorm\src\main\java\org\DenoiseStorm\tvgf\TVGF_Plugin.java

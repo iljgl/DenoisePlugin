@@ -1,0 +1,4 @@
+org\oxh\deconvolution\core\PSFGenerator.class
+org\oxh\deconvolution\core\DeconvolutionCore.class
+org\oxh\deconvolution\Deconvolution_Plugin.class
+org\oxh\deconvolution\core\FFTUtil.class

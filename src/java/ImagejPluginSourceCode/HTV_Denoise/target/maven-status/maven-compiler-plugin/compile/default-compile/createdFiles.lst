@@ -1,0 +1,7 @@
+org\oxh\htvdenoise\math\FFTOps.class
+org\oxh\htvdenoise\HTVDenoise_Plugin.class
+org\oxh\htvdenoise\core\SparseHessianCore.class
+org\oxh\htvdenoise\math\IterativeShrinkage.class
+org\oxh\htvdenoise\core\SparseHessianCore$ProcessResult.class
+org\oxh\htvdenoise\math\DifferentialOps.class
+org\oxh\htvdenoise\math\IterativeShrinkage$IterResult.class

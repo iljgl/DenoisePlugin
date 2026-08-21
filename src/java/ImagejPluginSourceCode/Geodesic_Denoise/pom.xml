@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.oxh</groupId>
+
+    <artifactId>geodesic-filter-imagej</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
+    <name>Geodesic_Filter</name>
+    <description>An ImageJ plugin based on Dijkstra's shortest path for preserving edge of Riemannian geodesics, supporting debugging output</description>
+    <properties>
+        <!-- The source code is compatible with JDK8 (ImageJ1.x requires it). Please note that entering 8 or 1.8 both mean the same thing (due to the historical convention of Java versions) -->
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <imagej.version>1.54f</imagej.version>
+    </properties>
+    <dependencies>
+        <!-- ImageJ core dependency, runtime is provided by the environment -->
+        <dependency>
+            <groupId>net.imagej</groupId>
+            <artifactId>ij</artifactId>
+            <version>${imagej.version}</version>
+            <scope>provided</scope>
+            <!-- ImageJ is provided during runtime and is not included in the final jar file -->
+        </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <!-- It is normal that the plugin version is different from the Maven version of the framework in IDEA (3.9.11). They are compatible and independently developed. -->
+                <version>3.13.0</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+            <!-- Package as a single Jar file and simply place it in ImageJ/plugins for use. -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.4.1</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <minimizeJar>true</minimizeJar>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
