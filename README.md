@@ -2,7 +2,7 @@
 
 - [Releases]()
 
-  [![denoisestorm-logo-download](figures/denoisestorm-logo-download.png)](https://github.com/iljgl/DenoisePlugin/releases/latest)
+  [<img src="figures/denoisestorm-logo-download.png" alt="denoisestorm-logo-download"  />](https://github.com/iljgl/DenoisePlugin/releases/latest)
 
 
 
