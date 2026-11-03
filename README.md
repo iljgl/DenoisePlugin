@@ -2,7 +2,7 @@
 
 - [Releases]()
 
-![denoisestorm-logo-download](.\figures\denoisestorm-logo-download.png)
+![denoisestorm-logo-download](figures/denoisestorm-logo-download.png)
 
 ## About DenoiseSTORM
 
