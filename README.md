@@ -8,7 +8,7 @@
 
 ## About DenoiseSTORM
 
-DenoiseSTORM is an open-source, interactive, and modular plug-in for [Fiji(ImageJ)]([Fiji Downloads](https://imagej.net/software/fiji/downloads)) designed for automated dehazing, denoising, and deconvolution of 2D grayscale images acquired by sCMOS, CCD, and EMCCD cameras. Our philosophy in developing DenoiseSTORM has been to offer an extensive collection of processing algorithms so that users can easily process and analyze their data.
+DenoiseSTORM is an open-source, interactive, and modular plug-in for [Fiji(ImageJ)](https://imagej.net/software/fiji/downloads) designed for automated dehazing, denoising, and deconvolution of 2D grayscale images acquired by sCMOS, CCD, and EMCCD cameras. Our philosophy in developing DenoiseSTORM has been to offer an extensive collection of processing algorithms so that users can easily process and analyze their data.
 
 
 
