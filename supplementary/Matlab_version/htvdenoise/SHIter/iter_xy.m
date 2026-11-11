@@ -1,15 +1,14 @@
-function [Lxy,bxy]=iter_xy(g,bxy,para,gpu,mu)
+function [Lxy,bxy]=iter_xy(g,bxy,para,hess,mu,gpu)
 
-if nargin < 4 || isempty(gpu)
-    %Check for CUDA-1.3-capable or newer graphics card.
-    gpu=cudaAvailable;
-end
+
 if nargin < 5 || isempty(mu)
     mu=1;
 end
-
+if nargin < 6 || isempty(gpu)
+    gpu=0;
+end
 gxy = forward_diff(forward_diff(g,1,1,gpu),1,2,gpu);
-signdxy = abs(gxy+bxy)-1/mu;
+signdxy = abs(gxy+bxy)-hess/mu;
 signdxy(signdxy<0)=0;
 signdxy=signdxy.*sign(gxy+bxy);
 dxy=signdxy;

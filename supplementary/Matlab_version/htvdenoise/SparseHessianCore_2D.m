@@ -15,7 +15,6 @@ function [final_g,reachCrite]=SparseHessianCore_2D(f,fidelity,hess,paral1,mu,ite
 % end
 reachCrite = 0;
 f = single(f);
-gpu=0;
 %%%%%
 % total_time = 0; % 累计总时间
 % iteration_data = zeros(4, iteration); % 预分配数据存储矩阵：4行(iter, diff_g, total_time, ttime) × iteration列
@@ -31,7 +30,7 @@ xxfft=operation_xx(sizeg);
 yyfft=operation_yy(sizeg);
 xyfft=operation_xy(sizeg);
 
-operationfft=hess*xxfft+ hess*yyfft+ 2*hess*xyfft;
+operationfft=xxfft+ yyfft+ xyfft;
 normlize = single(fidelityOverMu +paral1^2 +operationfft);
 clear xxfft yyfft xyfft  operationfft
 
@@ -49,13 +48,13 @@ for iter = 1:iteration
     prev_g = g;       % 初始解g=f
     g_update = fidelityOverMu*f;
    
-    [Lxx,bxx]=iter_xx(g,bxx,1,gpu);
+    [Lxx,bxx]=iter_xx(g,bxx,1,hess);
     g_update = g_update+Lxx;
     
-    [Lyy,byy]=iter_yy(g,byy,1,gpu);
+    [Lyy,byy]=iter_yy(g,byy,1,hess);
     g_update = g_update+Lyy;
     
-    [Lxy,bxy]=iter_xy(g,bxy,2,gpu);
+    [Lxy,bxy]=iter_xy(g,bxy,2,hess);
     g_update = g_update+Lxy;
 
     [Lsparse,bl1]=iter_sparse(g,bl1,paral1,boost,gpu);

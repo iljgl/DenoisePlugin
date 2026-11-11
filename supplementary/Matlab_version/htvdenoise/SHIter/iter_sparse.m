@@ -1,7 +1,7 @@
 function [Lsparse,bsparse]=iter_sparse(g,bsparse,para,boost,gpu,mu)
 
 if nargin < 5 || isempty(gpu)
-    gpu=cudaAvailable;
+    gpu=0;
 end
 if nargin < 6 || isempty(mu)
     mu=1;
